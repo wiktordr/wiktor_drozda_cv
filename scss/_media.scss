@@ -1,0 +1,200 @@
+// Tablets & Smaller
+@media (max-width: 850px) {
+  #header-home {
+    height: 30rem;
+    background: $bg-image-mobile no-repeat center center/cover;
+    height: 100vh;
+
+    .header-content {
+      padding-top: 5rem;
+      h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .lead {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  // Timeline
+
+  #timeline {
+    .line-ul {
+      .line-li {
+        div {
+          width: 250px;
+        }
+        &:nth-child(even) {
+          div {
+            left: -307px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 600px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      // height: 10rem;
+      // border-bottom: 3px solid $main-color;
+      // background-position: 20% 30%;
+      background: $bg-image-mobile no-repeat center center/cover;
+      height: 100vh;
+
+      .header-content {
+        h1 {
+          font-size: 1.7rem;
+          line-height: 1.2;
+        }
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  // Stack Grid
+
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bio-image"
+          "bio";
+      }
+    }
+
+    &-b {
+      .about-skills {
+        .skill {
+          h2 {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+
+  .lead {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  // Timeline
+
+  #timeline {
+    .line-ul {
+      padding: 30px;
+      .line-li {
+        margin-left: 20px;
+        div {
+          width: calc(100vw - 160px);
+        }
+        &:nth-child(even) {
+          div {
+            left: 30px;
+
+            &::before {
+              left: -15px;
+              border-width: 8px 16px 8px 0;
+              border-color: transparent $light-color transparent transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Landscape
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+    }
+  }
+
+  #timeline {
+    .line-ul {
+      padding: 30px;
+      .line-li {
+        margin-left: 20px;
+        div {
+          width: calc(100vw - 160px);
+        }
+        &:nth-child(even) {
+          div {
+            left: 30px;
+
+            &::before {
+              left: -15px;
+              border-width: 8px 16px 8px 0;
+              border-color: transparent $light-color transparent transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 375px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #timeline {
+    .line-ul {
+      padding: 30px;
+      .line-li {
+        margin-left: 20px;
+        div {
+          width: calc(100vw - 160px);
+        }
+        &:nth-child(even) {
+          div {
+            left: 30px;
+
+            &::before {
+              left: -15px;
+              border-width: 8px 16px 8px 0;
+              border-color: transparent $light-color transparent transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

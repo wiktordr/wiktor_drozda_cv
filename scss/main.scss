@@ -1,0 +1,184 @@
+@import "config";
+@import "utilities";
+@import "timeline";
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+// Logo
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+// Main Nav
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+// Header
+#header {
+  // Header Home
+  &-home {
+    background: $bg-image no-repeat center center/cover;
+
+    height: 100vh;
+    color: #fff;
+
+    // Header Content
+    .header-content {
+      text-align: center;
+      padding-top: 20%;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
+  }
+}
+
+// About
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        "bio-image bio bio"
+        "aw1 aw2 aw3";
+      grid-gap: 1.2rem;
+    }
+
+    .bio-image {
+      grid-area: bio-image;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+    }
+  }
+
+  // Technical Skills
+  &-b {
+    .about-skills {
+      display: flex;
+      flex-direction: column;
+      .skill {
+        display: grid;
+        grid-template-columns: 1fr 12fr;
+        margin: 5px;
+
+        h2 {
+          font-weight: 300;
+        }
+
+        .icon-p {
+          text-align: center;
+          margin: auto 0 auto 0;
+        }
+      }
+    }
+  }
+}
+
+// Contact Page
+
+// Footer
+#main-footer {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        background: $main-color;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+@import "media";
