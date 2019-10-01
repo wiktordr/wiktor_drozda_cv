@@ -223,31 +223,40 @@ img {
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00; }
 
-#about-a .about-info {
+.about-a .about-info {
   display: grid;
   grid-template-areas: "bio-image bio bio" "aw1 aw2 aw3";
   grid-gap: 1.2rem; }
 
-#about-a .bio-image {
+.about-a .bio-image {
   grid-area: bio-image; }
 
-#about-a .bio {
+.about-a .bio {
   grid-area: bio;
   border-left: 3px solid #ffbc00;
   padding: 0.8rem; }
 
-#about-b .about-skills {
+.about-b .about-skills {
   display: flex;
   flex-direction: column; }
-  #about-b .about-skills .skill {
+  .about-b .about-skills .skill {
     display: grid;
     grid-template-columns: 1fr 12fr;
     margin: 5px; }
-    #about-b .about-skills .skill h2 {
+    .about-b .about-skills .skill h2 {
       font-weight: 300; }
-    #about-b .about-skills .skill .icon-p {
+    .about-b .about-skills .skill .icon-p {
       text-align: center;
       margin: auto 0 auto 0; }
+
+.contact-b h1 {
+  text-align: center;
+  font-size: 3rem; }
+
+.contact-a .contact-info {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center; }
 
 #main-footer {
   background: #333;
