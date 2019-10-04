@@ -8,7 +8,7 @@
     .header-content {
       padding-top: 5rem;
       h1 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         line-height: 1.2;
       }
     }
@@ -21,7 +21,7 @@
 
   // Timeline
 
-  #timeline {
+  .timeline {
     .line-ul {
       .line-li {
         div {
@@ -58,7 +58,7 @@
 
       .header-content {
         h1 {
-          font-size: 1.7rem;
+          font-size: 1.5rem;
           line-height: 1.2;
         }
       }
@@ -108,13 +108,14 @@
 
   // Timeline
 
-  #timeline {
+  .timeline {
     .line-ul {
-      padding: 30px;
+      padding: 15px;
       .line-li {
         margin-left: 20px;
         div {
           width: calc(100vw - 160px);
+          visibility: visible;
         }
         &:nth-child(even) {
           div {
@@ -133,14 +134,14 @@
 }
 
 // Landscape
-@media (max-height: 580px) {
+@media (max-height: 550px) {
   #header-home {
     .header-content {
       padding-top: 3rem;
     }
   }
 
-  #timeline {
+  .timeline {
     .line-ul {
       padding: 30px;
       .line-li {
@@ -175,7 +176,7 @@
     }
   }
 
-  #timeline {
+  .timeline {
     .line-ul {
       padding: 30px;
       .line-li {

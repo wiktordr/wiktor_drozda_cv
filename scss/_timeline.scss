@@ -1,5 +1,5 @@
-#timeline {
-  overflow: hidden;
+.timeline {
+  overflow-x: hidden;
   .line-ul {
     background: $medium-color;
     padding: 50px;
@@ -19,7 +19,7 @@
         padding: 1rem;
         background: $light-color;
         transition: all 0.5s ease-in-out;
-        visibility: hidden;
+        visibility: visible;
         opacity: 0;
         border-radius: 2px;
 
