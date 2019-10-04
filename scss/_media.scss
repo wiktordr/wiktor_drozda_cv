@@ -1,6 +1,6 @@
 // Tablets & Smaller
 @media (max-width: 850px) {
-  #header-home {
+  .header-home {
     height: 30rem;
     background: $bg-image-mobile no-repeat center center/cover;
     height: 100vh;
@@ -39,7 +39,7 @@
 
 // Smartphones
 @media (max-width: 600px) {
-  #main-nav {
+  .main-nav {
     flex-direction: column;
     align-items: center;
 
@@ -48,7 +48,7 @@
     }
   }
 
-  #header {
+  .header {
     &-home {
       // height: 10rem;
       // border-bottom: 3px solid $main-color;
@@ -71,7 +71,7 @@
 
   // Stack Grid
 
-  #about {
+  .about {
     &-a {
       .about-info {
         grid-template-areas:
@@ -84,14 +84,15 @@
       .about-skills {
         .skill {
           h2 {
-            padding-left: 5px;
+            padding-left: 10px;
+            font-size: 17px;
           }
         }
       }
     }
   }
 
-  #main-footer {
+  .main-footer {
     height: 7rem;
 
     .footer-content {
@@ -135,7 +136,7 @@
 
 // Landscape
 @media (max-height: 550px) {
-  #header-home {
+  .header-home {
     .header-content {
       padding-top: 3rem;
     }
@@ -166,7 +167,7 @@
 }
 
 @media (max-height: 375px) {
-  #header-home {
+  .header-home {
     .header-content {
       padding-top: 3rem;
 

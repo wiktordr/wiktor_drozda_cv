@@ -181,44 +181,44 @@ h4 {
 img {
   width: 100%; }
 
-#logo {
+.logo {
   width: 70px;
   height: 70px;
   color: #fff;
   text-transform: uppercase; }
 
-#main-nav {
+.main-nav {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem; }
-  #main-nav ul {
+  .main-nav ul {
     display: flex; }
-  #main-nav li {
+  .main-nav li {
     padding: 1rem 1.5rem; }
-  #main-nav a {
+  .main-nav a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
     transition: border-color 0.5s; }
-    #main-nav a:hover {
+    .main-nav a:hover {
       border-color: #ccc; }
-    #main-nav a.current {
+    .main-nav a.current {
       border-color: #ffbc00; }
 
-#header-home {
+.header-home {
   background: url("../img/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
   color: #fff; }
-  #header-home .header-content {
+  .header-home .header-content {
     text-align: center;
     padding-top: 20%; }
-    #header-home .header-content h1 {
+    .header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
 
-#header-inner {
+.header-inner {
   background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00; }
@@ -258,16 +258,16 @@ img {
   text-align: center;
   font-size: 3rem; }
 
-#main-footer {
+.main-footer {
   background: #333;
   color: #fff;
   height: 5rem; }
-  #main-footer .footer-content {
+  .main-footer .footer-content {
     display: flex;
     justify-content: space-between;
     height: 5rem;
     align-items: center; }
-    #main-footer .footer-content .social .fab {
+    .main-footer .footer-content .social .fab {
       color: #fff;
       margin-right: 1rem;
       border: 2px #fff solid;
@@ -279,18 +279,18 @@ img {
       padding: 0.5rem;
       cursor: pointer;
       transition: all 0.5s; }
-      #main-footer .footer-content .social .fab:hover {
+      .main-footer .footer-content .social .fab:hover {
         background: #ffbc00;
         transition: all 0.5s; }
 
 @media (max-width: 850px) {
-  #header-home {
+  .header-home {
     height: 30rem;
     background: url("../img/showcase_mobile.jpg") no-repeat center center/cover;
     height: 100vh; }
-    #header-home .header-content {
+    .header-home .header-content {
       padding-top: 5rem; }
-      #header-home .header-content h1 {
+      .header-home .header-content h1 {
         font-size: 1.7rem;
         line-height: 1.2; }
   .lead {
@@ -302,26 +302,27 @@ img {
     left: -307px; } }
 
 @media (max-width: 600px) {
-  #main-nav {
+  .main-nav {
     flex-direction: column;
     align-items: center; }
-    #main-nav li {
+    .main-nav li {
       padding: 1rem; }
-  #header-home {
+  .header-home {
     background: url("../img/showcase_mobile.jpg") no-repeat center center/cover;
     height: 100vh; }
-    #header-home .header-content h1 {
+    .header-home .header-content h1 {
       font-size: 1.5rem;
       line-height: 1.2; }
-  #header-inner {
+  .header-inner {
     height: 10rem; }
-  #about-a .about-info {
+  .about-a .about-info {
     grid-template-areas: "bio-image" "bio"; }
-  #about-b .about-skills .skill h2 {
-    padding-left: 5px; }
-  #main-footer {
+  .about-b .about-skills .skill h2 {
+    padding-left: 10px;
+    font-size: 17px; }
+  .main-footer {
     height: 7rem; }
-    #main-footer .footer-content {
+    .main-footer .footer-content {
       flex-direction: column;
       padding: 1rem;
       height: 5rem; }
@@ -343,7 +344,7 @@ img {
           border-color: transparent #f4f4f4 transparent transparent; } }
 
 @media (max-height: 550px) {
-  #header-home .header-content {
+  .header-home .header-content {
     padding-top: 3rem; }
   .timeline .line-ul {
     padding: 30px; }
@@ -359,9 +360,9 @@ img {
           border-color: transparent #f4f4f4 transparent transparent; } }
 
 @media (max-height: 375px) {
-  #header-home .header-content {
+  .header-home .header-content {
     padding-top: 3rem; }
-    #header-home .header-content h1 {
+    .header-home .header-content h1 {
       font-size: 2rem; }
   .timeline .line-ul {
     padding: 30px; }

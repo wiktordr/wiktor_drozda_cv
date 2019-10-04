@@ -35,7 +35,7 @@ img {
 }
 
 // Logo
-#logo {
+.logo {
   width: 70px;
   height: 70px;
   color: #fff;
@@ -43,7 +43,7 @@ img {
 }
 
 // Main Nav
-#main-nav {
+.main-nav {
   display: flex;
   justify-content: space-between;
   padding-top: 1rem;
@@ -75,7 +75,7 @@ img {
 }
 
 // Header
-#header {
+.header {
   // Header Home
   &-home {
     background: $bg-image no-repeat center center/cover;
@@ -124,7 +124,7 @@ img {
     }
   }
 
-  // Technical Skills
+  // Skills
   &-b {
     .about-skills {
       display: flex;
@@ -166,7 +166,7 @@ img {
 }
 
 // Footer
-#main-footer {
+.main-footer {
   background: $dark-color;
   color: #fff;
   height: 5rem;
