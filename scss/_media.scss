@@ -38,7 +38,7 @@
 }
 
 // Smartphones
-@media (max-width: 600px) {
+@media (max-width: 560px) {
   .main-nav {
     flex-direction: column;
     align-items: center;
@@ -111,12 +111,12 @@
 
   .timeline {
     .line-ul {
-      padding: 15px;
+      padding: 5px;
+      padding-bottom: 30px;
       .line-li {
         margin-left: 20px;
         div {
-          width: calc(100vw - 160px);
-          visibility: visible;
+          width: calc(100vw - 100px);
         }
         &:nth-child(even) {
           div {
@@ -148,7 +148,7 @@
       .line-li {
         margin-left: 20px;
         div {
-          width: calc(100vw - 160px);
+          width: calc(100vw - 120px);
         }
         &:nth-child(even) {
           div {
@@ -169,7 +169,7 @@
 @media (max-height: 375px) {
   .header-home {
     .header-content {
-      padding-top: 3rem;
+      padding-top: 1.5rem;
 
       h1 {
         font-size: 2rem;
@@ -179,11 +179,12 @@
 
   .timeline {
     .line-ul {
-      padding: 30px;
+      padding: 5px;
+      padding-bottom: 20px;
       .line-li {
         margin-left: 20px;
         div {
-          width: calc(100vw - 160px);
+          width: calc(100vw - 100px);
         }
         &:nth-child(even) {
           div {

@@ -19,7 +19,7 @@
         padding: 1rem;
         background: $light-color;
         transition: all 0.5s ease-in-out;
-        visibility: visible;
+        visibility: hidden;
         opacity: 0;
         border-radius: 2px;
 
@@ -60,10 +60,6 @@
             border-color: transparent transparent transparent $light-color;
           }
         }
-      }
-
-      &:last-child {
-        margin-bottom: 40px;
       }
 
       &.show {

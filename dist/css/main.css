@@ -109,7 +109,7 @@ input[class^="btn-"]:hover {
         padding: 1rem;
         background: #f4f4f4;
         transition: all 0.5s ease-in-out;
-        visibility: visible;
+        visibility: hidden;
         opacity: 0;
         border-radius: 2px; }
         .timeline .line-ul .line-li div ul {
@@ -136,8 +136,6 @@ input[class^="btn-"]:hover {
           right: -15px;
           border-width: 8px 0 8px 16px;
           border-color: transparent transparent transparent #f4f4f4; }
-      .timeline .line-ul .line-li:last-child {
-        margin-bottom: 40px; }
       .timeline .line-ul .line-li.show div {
         transform: none;
         visibility: visible;
@@ -301,7 +299,7 @@ img {
   .timeline .line-ul .line-li:nth-child(even) div {
     left: -307px; } }
 
-@media (max-width: 600px) {
+@media (max-width: 560px) {
   .main-nav {
     flex-direction: column;
     align-items: center; }
@@ -330,12 +328,12 @@ img {
     font-size: 0.8rem;
     margin-bottom: 2rem; }
   .timeline .line-ul {
-    padding: 15px; }
+    padding: 5px;
+    padding-bottom: 30px; }
     .timeline .line-ul .line-li {
       margin-left: 20px; }
       .timeline .line-ul .line-li div {
-        width: calc(100vw - 160px);
-        visibility: visible; }
+        width: calc(100vw - 100px); }
       .timeline .line-ul .line-li:nth-child(even) div {
         left: 30px; }
         .timeline .line-ul .line-li:nth-child(even) div::before {
@@ -351,7 +349,7 @@ img {
     .timeline .line-ul .line-li {
       margin-left: 20px; }
       .timeline .line-ul .line-li div {
-        width: calc(100vw - 160px); }
+        width: calc(100vw - 120px); }
       .timeline .line-ul .line-li:nth-child(even) div {
         left: 30px; }
         .timeline .line-ul .line-li:nth-child(even) div::before {
@@ -361,15 +359,16 @@ img {
 
 @media (max-height: 375px) {
   .header-home .header-content {
-    padding-top: 3rem; }
+    padding-top: 1.5rem; }
     .header-home .header-content h1 {
       font-size: 2rem; }
   .timeline .line-ul {
-    padding: 30px; }
+    padding: 5px;
+    padding-bottom: 20px; }
     .timeline .line-ul .line-li {
       margin-left: 20px; }
       .timeline .line-ul .line-li div {
-        width: calc(100vw - 160px); }
+        width: calc(100vw - 100px); }
       .timeline .line-ul .line-li:nth-child(even) div {
         left: 30px; }
         .timeline .line-ul .line-li:nth-child(even) div::before {
