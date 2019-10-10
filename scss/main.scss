@@ -35,11 +35,18 @@ img {
 }
 
 // Logo
+
 .logo {
-  width: 70px;
-  height: 70px;
-  color: #fff;
-  text-transform: uppercase;
+  a {
+    transition: none !important;
+
+    img {
+      width: 70px;
+      height: 70px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
 }
 
 // Main Nav
@@ -50,24 +57,26 @@ img {
 
   ul {
     display: flex;
-    li {
-      padding: 1rem 1.5rem;
-      a {
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        border-bottom: 3px transparent solid;
-        padding-bottom: 0.5rem;
-        transition: border-color 0.5s;
+  }
 
-        &:hover {
-          border-color: $medium-color;
-        }
+  li {
+    padding: 1rem 1.5rem;
+  }
 
-        &.current {
-          border-color: $main-color;
-        }
-      }
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
     }
   }
 }
@@ -89,6 +98,15 @@ img {
       h1 {
         font-size: 4rem;
         line-height: 1.2;
+      }
+    }
+
+    .logo {
+      img {
+        width: 70px;
+        height: 70px;
+        color: #fff;
+        text-transform: uppercase;
       }
     }
   }

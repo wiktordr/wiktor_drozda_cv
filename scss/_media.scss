@@ -50,9 +50,9 @@
 
   .header {
     &-home {
-      // height: 10rem;
-      // border-bottom: 3px solid $main-color;
-      // background-position: 20% 30%;
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
       background: $bg-image-mobile no-repeat center center/cover;
       height: 100vh;
 
